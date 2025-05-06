@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_baa2b58e26b25c8d189a30bceb4e4c15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_baa2b58e26b25c8d189a30bceb4e4c15" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_baa2b58e26b25c8d189a30bceb4e4c15 = L.map(
+                "map_baa2b58e26b25c8d189a30bceb4e4c15",
+                {
+                    center: [40.923, 9.498],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7d3baf4e89d7fd6aaa37721412b79c4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_baa2b58e26b25c8d189a30bceb4e4c15);
+        
+    
+            var marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2 = L.markerClusterGroup(
+                {}
+            );
+            map_baa2b58e26b25c8d189a30bceb4e4c15.addLayer(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var marker_862a95b405c70f911d4605146556ff81 = L.marker(
+                [40.923, 9.498],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_cbe01e568cc920cecbae4206e6f8acc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_862a95b405c70f911d4605146556ff81.setIcon(icon_cbe01e568cc920cecbae4206e6f8acc1);
+        
+    
+        var popup_8c24faf8a7326a8ffab606fff0d6f778 = L.popup({"maxWidth": 300});
+
+        
+            var html_d20185a60121eebb9b9bde5e591f7f02 = $(`<div id="html_d20185a60121eebb9b9bde5e591f7f02" style="width: 100.0%; height: 100.0%;"><b>Olbia</b><br>Point de départ / arrivée<br><b>Temps depuis Olbia:</b> 0 min<br><b>Durée activité:</b> 0.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 10/10</div>`)[0];
+            popup_8c24faf8a7326a8ffab606fff0d6f778.setContent(html_d20185a60121eebb9b9bde5e591f7f02);
+        
+
+        marker_862a95b405c70f911d4605146556ff81.bindPopup(popup_8c24faf8a7326a8ffab606fff0d6f778)
+        ;
+
+        
+    
+    
+            var marker_237e088f90dc3a72c1764ec549219f66 = L.marker(
+                [40.96, 9.568],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_2efe44824e601821519ced7b07a31901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_237e088f90dc3a72c1764ec549219f66.setIcon(icon_2efe44824e601821519ced7b07a31901);
+        
+    
+        var popup_d6a9971d97a37802040d29b35a3df463 = L.popup({"maxWidth": 300});
+
+        
+            var html_ddaa81cab8fee4788a2d93cf8fc52011 = $(`<div id="html_ddaa81cab8fee4788a2d93cf8fc52011" style="width: 100.0%; height: 100.0%;"><b>Pittulongu</b><br>Plage familiale avec vue sur Tavolara<br><b>Temps depuis Olbia:</b> 15 min<br><b>Durée activité:</b> 2.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 7/10</div>`)[0];
+            popup_d6a9971d97a37802040d29b35a3df463.setContent(html_ddaa81cab8fee4788a2d93cf8fc52011);
+        
+
+        marker_237e088f90dc3a72c1764ec549219f66.bindPopup(popup_d6a9971d97a37802040d29b35a3df463)
+        ;
+
+        
+    
+    
+            var marker_3fd109b2572900fb1f556dc699a8edaf = L.marker(
+                [40.886, 9.592],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_b735e456c17a66244e234a2e376021f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3fd109b2572900fb1f556dc699a8edaf.setIcon(icon_b735e456c17a66244e234a2e376021f3);
+        
+    
+        var popup_d985a36c4cf7bfa37da92b42b76d0381 = L.popup({"maxWidth": 300});
+
+        
+            var html_18594136a4d455b8a0c2613345068092 = $(`<div id="html_18594136a4d455b8a0c2613345068092" style="width: 100.0%; height: 100.0%;"><b>Porto Istana</b><br>Plage turquoise idéale pour la baignade<br><b>Temps depuis Olbia:</b> 25 min<br><b>Durée activité:</b> 2.5 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 8/10</div>`)[0];
+            popup_d985a36c4cf7bfa37da92b42b76d0381.setContent(html_18594136a4d455b8a0c2613345068092);
+        
+
+        marker_3fd109b2572900fb1f556dc699a8edaf.bindPopup(popup_d985a36c4cf7bfa37da92b42b76d0381)
+        ;
+
+        
+    
+    
+            var marker_4e86f1d49cad53bc10542fcd663cf731 = L.marker(
+                [41.005, 9.627],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_af097bdaee3401bc4f5ddc8bc334260e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4e86f1d49cad53bc10542fcd663cf731.setIcon(icon_af097bdaee3401bc4f5ddc8bc334260e);
+        
+    
+        var popup_fc4b678bd84ccdb38b2b65e49b48aac0 = L.popup({"maxWidth": 300});
+
+        
+            var html_2ccbe2d8590a2103f88ae3d238972413 = $(`<div id="html_2ccbe2d8590a2103f88ae3d238972413" style="width: 100.0%; height: 100.0%;"><b>Golfo Aranci</b><br>Petit port avec possibilité d'observer des dauphins<br><b>Temps depuis Olbia:</b> 25 min<br><b>Durée activité:</b> 2.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 8/10</div>`)[0];
+            popup_fc4b678bd84ccdb38b2b65e49b48aac0.setContent(html_2ccbe2d8590a2103f88ae3d238972413);
+        
+
+        marker_4e86f1d49cad53bc10542fcd663cf731.bindPopup(popup_fc4b678bd84ccdb38b2b65e49b48aac0)
+        ;
+
+        
+    
+    
+            var marker_8616cd4568b468a1d472cf298d8dd883 = L.marker(
+                [41.03, 9.535],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_9544925b998100b1425dfb7b548fa6de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8616cd4568b468a1d472cf298d8dd883.setIcon(icon_9544925b998100b1425dfb7b548fa6de);
+        
+    
+        var popup_8cde79a0adb5819cf6b99e50e3cc9d9a = L.popup({"maxWidth": 300});
+
+        
+            var html_aca992a1a85a123b0dfa2d0a6f514568 = $(`<div id="html_aca992a1a85a123b0dfa2d0a6f514568" style="width: 100.0%; height: 100.0%;"><b>Porto Rotondo</b><br>Station balnéaire chic avec marina et ruelles commerçantes<br><b>Temps depuis Olbia:</b> 25 min<br><b>Durée activité:</b> 2.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 7/10</div>`)[0];
+            popup_8cde79a0adb5819cf6b99e50e3cc9d9a.setContent(html_aca992a1a85a123b0dfa2d0a6f514568);
+        
+
+        marker_8616cd4568b468a1d472cf298d8dd883.bindPopup(popup_8cde79a0adb5819cf6b99e50e3cc9d9a)
+        ;
+
+        
+    
+    
+            var marker_576ba352cac7f33199c67b624d3e6543 = L.marker(
+                [41.135, 9.531],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_a878eeb028fb2bf0350c1a6bad34dc52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_576ba352cac7f33199c67b624d3e6543.setIcon(icon_a878eeb028fb2bf0350c1a6bad34dc52);
+        
+    
+        var popup_118ab63fedd083272f3ea15e61963bdb = L.popup({"maxWidth": 300});
+
+        
+            var html_8a7823286b9c6e76a5d9dc20faa95bd3 = $(`<div id="html_8a7823286b9c6e76a5d9dc20faa95bd3" style="width: 100.0%; height: 100.0%;"><b>Porto Cervo</b><br>Destination glamour avec yachts et plages élégantes<br><b>Temps depuis Olbia:</b> 50 min<br><b>Durée activité:</b> 2.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 9/10</div>`)[0];
+            popup_118ab63fedd083272f3ea15e61963bdb.setContent(html_8a7823286b9c6e76a5d9dc20faa95bd3);
+        
+
+        marker_576ba352cac7f33199c67b624d3e6543.bindPopup(popup_118ab63fedd083272f3ea15e61963bdb)
+        ;
+
+        
+    
+    
+            var marker_0e3279546a98f98c1bf01daf64b6cf13 = L.marker(
+                [41.033, 9.471],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_3242d4f8d21550bca4a989023b66445d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0e3279546a98f98c1bf01daf64b6cf13.setIcon(icon_3242d4f8d21550bca4a989023b66445d);
+        
+    
+        var popup_fa011175bd8770a93fdbc99f207d4c6d = L.popup({"maxWidth": 300});
+
+        
+            var html_a513198639d1f86d9bc9c1e8e7e76369 = $(`<div id="html_a513198639d1f86d9bc9c1e8e7e76369" style="width: 100.0%; height: 100.0%;"><b>San Pantaleo</b><br>Village d'artistes et marché local dans les montagnes<br><b>Temps depuis Olbia:</b> 30 min<br><b>Durée activité:</b> 1.5 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 6/10</div>`)[0];
+            popup_fa011175bd8770a93fdbc99f207d4c6d.setContent(html_a513198639d1f86d9bc9c1e8e7e76369);
+        
+
+        marker_0e3279546a98f98c1bf01daf64b6cf13.bindPopup(popup_fa011175bd8770a93fdbc99f207d4c6d)
+        ;
+
+        
+    
+    
+            var marker_21752b1c0880a06ce075e689295d6697 = L.marker(
+                [41.08, 9.398],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_5a8a205e2cdf20883b1691c90dc0dbd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_21752b1c0880a06ce075e689295d6697.setIcon(icon_5a8a205e2cdf20883b1691c90dc0dbd8);
+        
+    
+        var popup_ca58aeed0684d8bf0d4d40a22c928dd6 = L.popup({"maxWidth": 300});
+
+        
+            var html_3899404d0fd462365a4fa1412bc25f22 = $(`<div id="html_3899404d0fd462365a4fa1412bc25f22" style="width: 100.0%; height: 100.0%;"><b>Arzachena</b><br>Village typique avec centre historique et gastronomie<br><b>Temps depuis Olbia:</b> 35 min<br><b>Durée activité:</b> 2.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 6/10</div>`)[0];
+            popup_ca58aeed0684d8bf0d4d40a22c928dd6.setContent(html_3899404d0fd462365a4fa1412bc25f22);
+        
+
+        marker_21752b1c0880a06ce075e689295d6697.bindPopup(popup_ca58aeed0684d8bf0d4d40a22c928dd6)
+        ;
+
+        
+    
+    
+            var marker_cc3c6d393eab079a1fcf58587f10008f = L.marker(
+                [40.776, 9.675],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_f1819a5dd2f92fdb129c293409b22859 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_cc3c6d393eab079a1fcf58587f10008f.setIcon(icon_f1819a5dd2f92fdb129c293409b22859);
+        
+    
+        var popup_9a652233f6248615dba61b1c82ec0d7c = L.popup({"maxWidth": 300});
+
+        
+            var html_68880c9629987151657fd5bf7b500e85 = $(`<div id="html_68880c9629987151657fd5bf7b500e85" style="width: 100.0%; height: 100.0%;"><b>La Cinta (San Teodoro)</b><br>Grande plage populaire parfaite pour la détente<br><b>Temps depuis Olbia:</b> 50 min<br><b>Durée activité:</b> 3.0 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 9/10</div>`)[0];
+            popup_9a652233f6248615dba61b1c82ec0d7c.setContent(html_68880c9629987151657fd5bf7b500e85);
+        
+
+        marker_cc3c6d393eab079a1fcf58587f10008f.bindPopup(popup_9a652233f6248615dba61b1c82ec0d7c)
+        ;
+
+        
+    
+    
+            var marker_c205e5bf70507be13182e05f3586ec7e = L.marker(
+                [40.855, 9.733],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_4d8334d1dfc8c642bf65d6d109eaf899 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c205e5bf70507be13182e05f3586ec7e.setIcon(icon_4d8334d1dfc8c642bf65d6d109eaf899);
+        
+    
+        var popup_0684381ded2e7403a7164941a6252bc6 = L.popup({"maxWidth": 300});
+
+        
+            var html_a1e7ca486171f95c0881f1fa33b3f98b = $(`<div id="html_a1e7ca486171f95c0881f1fa33b3f98b" style="width: 100.0%; height: 100.0%;"><b>Tavolara - Punta Coda Cavallo</b><br>Réserve marine naturelle pour plongée et randonnée<br><b>Temps depuis Olbia:</b> 50 min<br><b>Durée activité:</b> 3.0 h<br><b>Prix estimé:</b> 20 €<br><b>Priorité:</b> 10/10</div>`)[0];
+            popup_0684381ded2e7403a7164941a6252bc6.setContent(html_a1e7ca486171f95c0881f1fa33b3f98b);
+        
+
+        marker_c205e5bf70507be13182e05f3586ec7e.bindPopup(popup_0684381ded2e7403a7164941a6252bc6)
+        ;
+
+        
+    
+    
+            var marker_8704d3345e311a0eb493d47f0c9dbae0 = L.marker(
+                [40.81, 9.521],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_e6926a6abe55e9095f83e5ef40e21d22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8704d3345e311a0eb493d47f0c9dbae0.setIcon(icon_e6926a6abe55e9095f83e5ef40e21d22);
+        
+    
+        var popup_e669efe6e6ac5a6e88bcc4855cc7eb9c = L.popup({"maxWidth": 300});
+
+        
+            var html_d912c2fb7b66c1d75cfcf3ed80889aa8 = $(`<div id="html_d912c2fb7b66c1d75cfcf3ed80889aa8" style="width: 100.0%; height: 100.0%;"><b>Berchiddeddu</b><br>Petit village paisible pour balade rurale<br><b>Temps depuis Olbia:</b> 30 min<br><b>Durée activité:</b> 1.5 h<br><b>Prix estimé:</b> 0 €<br><b>Priorité:</b> 4/10</div>`)[0];
+            popup_e669efe6e6ac5a6e88bcc4855cc7eb9c.setContent(html_d912c2fb7b66c1d75cfcf3ed80889aa8);
+        
+
+        marker_8704d3345e311a0eb493d47f0c9dbae0.bindPopup(popup_e669efe6e6ac5a6e88bcc4855cc7eb9c)
+        ;
+
+        
+    
+    
+            var marker_231aefd90f1e501bfdb52ae9ac7e8b8f = L.marker(
+                [41.102, 9.437],
+                {}
+            ).addTo(marker_cluster_6c1b2daeeeb1a91132cb127ed06026c2);
+        
+    
+            var icon_60064e8d6b659d2c030de0eee75ae92b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_231aefd90f1e501bfdb52ae9ac7e8b8f.setIcon(icon_60064e8d6b659d2c030de0eee75ae92b);
+        
+    
+        var popup_3211bee4d60ff914ba269d633a8cdb88 = L.popup({"maxWidth": 300});
+
+        
+            var html_ce98b47ff7b50c1d7e4f418d860e957a = $(`<div id="html_ce98b47ff7b50c1d7e4f418d860e957a" style="width: 100.0%; height: 100.0%;"><b>Cannigione</b><br>Port charmant et départs pour l’archipel de La Maddalena<br><b>Temps depuis Olbia:</b> 50 min<br><b>Durée activité:</b> 2.0 h<br><b>Prix estimé:</b> 20 €<br><b>Priorité:</b> 8/10</div>`)[0];
+            popup_3211bee4d60ff914ba269d633a8cdb88.setContent(html_ce98b47ff7b50c1d7e4f418d860e957a);
+        
+
+        marker_231aefd90f1e501bfdb52ae9ac7e8b8f.bindPopup(popup_3211bee4d60ff914ba269d633a8cdb88)
+        ;
+
+        
+    
+</script>
+</html>
